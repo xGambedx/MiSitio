@@ -1,0 +1,622 @@
+/* Hoja de estilos externa */
+
+/* Fuente externa de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+html {
+    /* establecer el comportamiento del scroll para que el desplazamiento se realice suavemente */
+    scroll-behavior: smooth;
+}
+
+/* https://color.adobe.com/es/violeta%20oscuro%206-color-theme-9242315 */
+:root {
+    /* Declaración de variables para colores */
+    --color1:#24023F;
+    --color2:#7308CB;
+    --color3:#48057F;
+    --color4:#4F068C;
+    --color5:#390465;
+    --color6:#080325;
+    --color7: #d92b4c;
+    --color8: #fd4d6d;
+    --color-negro:#000000;
+    --color-blanco:#ffffff;
+    --gris-claro:#999999;
+    --gris-oscuro:#454545;
+}
+
+/* Eliminar los margenes y espaciados internos predeterminados en la página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--color-blanco); /* color del texto */
+    font-family: "Lato", sans-serif; /* Aplicando la fuente enlazada */
+    background-color: var(--color1); /* color del fondo de la página */
+}
+
+h2 {
+    font-weight: 400; /* grosor de la fuente */
+}
+
+h3 {
+    font-weight: 700; /* grosor de la fuente */
+}
+
+h4 {
+    font-weight: 400; /* grosor de la fuente */
+}
+
+img {
+    display: block; /* Elimina el espacio en blanco inferior que dejan las imagenes */
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+#menu-superior {
+    background-color: var(--color1); /* color de fondo */
+    padding-top: 10px; /* separacion arriba */
+    padding-bottom: 10px; /* separacion abajo */
+}
+
+#menu-superior .fila {
+    justify-content: space-between; /* separa los elementos a la derecha e izquierda */
+}
+
+#menu-superior .menu-barra a {
+    font-size: 0.8em; /* tamaño del a */
+    font-weight: 300;
+}
+
+#menu-superior a {
+    padding: 10px 10px;
+    color: rgba(255, 255, 255, 0.7); /* color del a */
+    transition: all 0.7s ease-in-out; /* transicion */
+}
+
+#menu-superior a:hover {
+    color: var(--color-blanco); /* color del a */
+}
+
+#menu-superior i {
+    font-size: 20px;
+    margin-right: 10px; /* margen derecho */
+}
+
+#menu-superior .menu-barra:first-child a {
+    margin-top: 3px; /* margen arriba */
+}
+
+#menu-superior .menu-barra:nth-child(2) i {
+    margin-right: 4px;
+}
+
+#menu-superior .menu-barra:last-child {
+    background-color: var(--color7); /* color de fondo */
+    border-radius: 3px; /* curvatura */
+    margin-right: 10px; /* margen derecho */
+    transition: all 0.7s ease-in-out; /* transicion */
+}
+
+#menu-superior .menu-barra:last-child:hover {
+    background-color: rgba(217, 43, 75, 0.9); /* color de fondo */
+}
+
+#menu-superior .menu-barra:last-child a {
+    color: var(--color-blanco); /* color del a */
+}
+
+#cabecera {
+    background-color: var(--color6); /* color del área */
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+#cabecera .logo {
+    width: 90px; /* ancho del logo */
+}
+
+#cabecera h1 {
+    font-size: 30px; /* tamaño del h1 */
+    font-weight: 400; /* grosor de la fuente */
+    margin-left: 10px; /* margen izquierda */
+    color: var(--color-blanco);
+}
+
+#cabecera #cabecera-menu a {
+    padding: 30px 15px;
+    color: var(--color-blanco); /* color del a */
+    border-bottom: solid 3px transparent; /* borde abajo */
+    transition: all 0.7s ease-in-out; /* transicion */
+}
+
+#cabecera #cabecera-menu a:hover {
+    color: var(--gris-claro); /* color del a al pasar el puntero */
+    border-bottom: solid 3px var(--gris-claro); /* borde abajo */
+}
+
+#cabecera .fila {
+    justify-content: space-between;
+}
+
+#plataformas {
+    background-color: var(--color4); /* color del área */
+    /* margen en ambos lados del área */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#plataformas i {
+    font-size: 30px; /* tamaño de los iconos */
+}
+
+#plataformas h2 {
+    padding-left: 10px; /* separación a la izquierda del h2 */
+}
+
+#plataformas h3 {
+    padding-top: 10px; /* separación arriba del h3 */
+    padding-bottom: 20px;
+}
+
+#plataformas .col2 {
+    text-align: center; /* centra el texto de las columnas */
+}
+
+#plataformas .col2 i {
+    font-size: 100px; /* tamaño de los iconos de las columnas */
+}
+
+#plataformas .col2:first-child i {
+    font-size: 110px; /* tamaño de los iconos de las columnas */
+    margin-top: -8px;
+    margin-bottom: -5px;
+}
+
+#categorias {
+    background-image: url(../images/baner1.jpg); /* imagen del área */
+    background-size: cover; /* presenta el mayor contenido de la imagen */
+    background-position: center; /* centra la imagen del área */
+    position: relative;
+    text-shadow: 1px  0px 0px var(--color-negro), /* sombra del texto */
+                 0px  1px 0px var(--color-negro),
+                 -1px  0px 0px var(--color-negro),
+                 0px -1px 0px var(--color-negro);
+}
+#categorias .contenedor2 h2 {
+    font-size: 35px; /* tamaño del h2 */
+    text-align: center;
+}
+
+#categorias .contenedor2 h3 {
+    padding-top: 12px; /* separación arriba del h3 */
+    text-align: center;
+}
+
+#categorias-mas {
+    position: absolute;
+    right: 30px; /* posicion derecha */
+    background-color: rgba(36, 2, 63, 0.7);
+    border-radius: 4px; /* curvatura del borde */
+    padding: 5px; /* separacion general */
+    cursor: pointer; /* estilo del cursor */
+    transition: all 0.7s ease-in-out; /* transicion */
+}
+
+#categorias-mas:hover {
+    background-color: rgba(36, 2, 63, 0.9); /* color de fondo */
+}
+
+#categorias .categorias-img {
+    box-shadow: 11px 11px 5px 0px rgba(36, 2, 63, 0.65); /* sombra del div*/
+    border-radius: 5px; /* curvatura del div */
+    border: solid 1px var(--gris-claro); /* borde del div */
+    overflow: hidden;
+}
+
+#categorias img {
+    transition: all 0.7s ease-in-out;
+}
+
+#categorias img:hover {
+    transform: scale(1.1); /* agranda la img al pasar el puntero */
+    filter: grayscale(50%);
+}
+
+#lanzamientos {
+    background-color: var(--color3); /* color del área */
+    position: relative;
+}
+
+#lanzamientos-ofertas {
+    position: absolute;
+    background-color: var(--color1);
+    width: 60%;
+    height: 26%;
+    /* coordenadas */
+    bottom: -90px;
+    left: 19.8%;
+    padding-top: 15px;
+}
+
+#lanzamientos-ofertas .fila {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+#lanzamientos-ofertas ul {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+}
+
+#lanzamientos-ofertas .enlace-boton {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#lanzamientos img {
+    margin-left: -2px;
+    transform: scale(1.05);
+}
+
+#lanzamientos i {
+    font-size: 30px; /* tamaño de los iconos */
+}
+
+#lanzamientos h2 {
+    padding-left: 10px; /* separación a la izquierda del h2 */
+}
+
+#lanzamientos h3 {
+    text-align: center; /* centra el h3 */
+    color: var(--color8);
+}
+
+#lanzamientos h4 {
+    margin-bottom: 5px; /* separación abajo del h4 */
+}
+
+#lanzamientos p {
+    text-align: center; /* centra el texto */
+    margin-top: 15px; /* separación arriba del párrafo */
+    margin-bottom: 15px; /* separación abajo del párrafo */
+}
+
+#lanzamientos-fecha {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%; /* curvatura del borde */
+    border: solid 2px var(--color2); /* borde de la imagen */
+}
+
+#lanzamientos h4 {
+    padding-top: 65px; /* separacion arriba */
+    text-align: center; /* centra el h4 */
+    font-weight: 300;
+}
+
+#lanzamientos-descripcion {
+    position: absolute;
+    background-color: rgba(8, 3, 37, 0.7); /* color de fondo */
+    width: 100%; /* ancho */
+    height: 100%; /* alto */
+    top: 0;
+    transform: translatey(-25px); /* coloca el elemento arriba */
+    opacity: 0%;
+    transition: all 0.7s ease-in-out;
+}
+
+#lanzamientos-descripcion:hover {
+    opacity: 100%;
+    transform: translatey(0px); /* coloca el elemento en su posicion inicial */
+}
+
+#popular {
+    background-color: var(--color6); /* color del área */
+    padding-top: 120px;
+}
+
+#popular h2 {
+    text-align: center; /* centra el h2 */
+}
+
+#popular h3 {
+    text-align: center; /* centra el h3 */
+    padding-bottom: 10px; /* separación abajo del h3 */
+    color: var(--color8);
+}
+
+#popular p {
+    text-align: center; /* centra el texto */
+    margin-top: 15px; /* separación arriba del párrafo*/
+    margin-bottom: 15px; /* margen abajo */
+}
+
+#popular .popular-img {
+    border: solid 1px var(--color2); /* borde de la imagen */
+    border-radius: 5px; /* curvatura de la imagen */
+    overflow: hidden;
+}
+
+#popular img {
+    transition: all 0.7s ease-in-out; /* transicion */
+}
+
+#popular img:hover {
+    transform: scale(1.1); /* agranda la imagen */
+    filter: grayscale(50%);
+}
+
+#historia {
+    background-image: url(../images/baner2.jpg); /* imagen del área */
+    background-size: cover; /* presenta el mayor contenido de la imagen */
+    background-position: center; /* centra la imagen del área */
+    text-shadow: 1px  0px 0px var(--color-negro), /* sombra del texto */
+                 0px  1px 0px var(--color-negro),
+                 -1px  0px 0px var(--color-negro),
+                 0px -1px 0px var(--color-negro);
+}
+
+#pie {
+    background-color: var(--color6); /* color del área */
+}
+
+#pie .contenedor3 ul {
+    list-style-type: none; /* quita la viñeta */
+}
+
+#pie .fila {
+    width: 900px;
+    margin-bottom: 20px; /* margen abajo */
+    margin-left: auto; /* margen izquierda */
+    margin-right: auto; /* margen izquierda */
+}
+
+#pie .contenedor3 h2 {
+    font-size: 20px;
+    color: var(--color8); /* color del h2 */
+    margin-bottom: 20px; /* margen abajo */
+}
+
+#pie .contenedor6 i {
+    font-size: 25px;
+    margin-top: -2px;
+}
+
+#pie .contenedor3 p {
+    margin-top: -2px;
+    font-size: 18px;
+    color: var(--gris-claro); /* color del p */
+}
+
+#pie .contenedor6 a {
+    font-size: 18px;
+    color: var(--gris-claro); /* color del a */
+    width: fit-content;
+    transition: all 0.7s ease-in-out; /* transicion */
+}
+
+#pie .contenedor6 a:hover {
+    color: var(--color-blanco); /* color del a al pasar el puntero */
+}
+
+#pie .contenedor3 li {
+    padding-bottom: 20px; /* separacion abajo */
+}
+
+#pie .contenedor6:nth-child(2) li {
+    padding-bottom: 23px; /* separacion abajo */
+}
+
+#pie-copy {
+    padding-top: 20px; /* separacion arriba */
+    border-top: solid 3px var(--color7); /* borde arriba */
+    font-weight: 300;
+    text-align: center;
+}
+
+#scroll-arriba {
+    background-color: var(--color7);
+    color: var(--color-blanco);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    border: solid 2px var(--color-blanco);
+    text-align: center;
+    border-radius: 50%;
+
+    /* Posicionamiento y coordenadas */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    transition: all 0.5s ease-in-out;
+
+    /* Ocultar el botón al cargar la página */
+    opacity: 0;
+}
+
+#scroll-arriba:hover {
+    background-color: var(--color-blanco);
+    color: var(--color7);
+    box-shadow: -3px 8px 25px 0px rgba(217, 43, 75, 0.3);
+    transform: translateY(-3px);
+}
+
+.fila {
+    /* Coloca los objetos que contiene directamente uno al lado del otro en dirección de fila */
+    display: flex;
+}
+
+.contenedor {
+    max-width: 1300px; /* ancho máximo del contenedor */
+    /* margen en ambos lados del contenedor */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor2 {
+    max-width: 800px; /* ancho máximo del contenedor */
+    /* margen en ambos lados del contenedor */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor3 {
+    max-width: 1200px; /* ancho máximo del contenedor */
+    /* margen en ambos lados del contenedor */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor4 {
+    max-width: 1400px; /* ancho máximo del contenedor */
+    /* margen en ambos lados del contenedor */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor5 {
+    max-width: 250px; /* ancho máximo del contenedor */
+}
+
+.contenedor6 {
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.espaciado {
+    padding-top: 20px; /* separación arriba */
+    padding-bottom: 20px; /* separación abajo */
+}
+
+.espaciado2 {
+    padding-top: 20px; /* separación arriba */
+    padding-bottom: 130px; /* separación abajo */
+}
+
+.img-ajustar {
+    /* Se utiliza para ajustar el ancho de la imagen
+    al ancho de su caja contenedora */
+    width: 100%;
+    height: auto;
+}
+
+.alinear-vertical {
+    /* Alinea verticalmente el contenido de una caja padre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.letra1 {
+    padding-bottom: 32px; /* separación abajo */
+}
+
+.letra2 {
+    padding-bottom: 10px; /* separación abajo */
+}
+
+.col {
+    max-width: 355px; /* ancho máximo de la columna */
+    display: inline-block; /* Coloca los objetos que contiene directamente uno al lado del otro en dirección de fila */
+    /* separación arriba de las columnas */
+    padding-top: 15px;
+    /* Separación en ambos lados de las columnas */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.col2 {
+    /* separación arriba de las columnas */
+    padding-top: 20px;
+    /* Separación en ambos lados de las columnas */
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgba(36, 2, 63, 0.4); /* color de la columna */
+    /* margen arriba de las columnas */
+    margin-top: 20px;
+    /* margen en ambos lados de las columnas */
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 5px; /* curvatura de la columna */
+}
+
+.col3 {
+    max-width: 80px; /* ancho máximo de la columna */
+    text-align: center; /* centra el texto */
+    padding: 10px; /* separación arriba de las columnas */
+}
+
+/* Ajustar el ancho de una columna al 25% del contenedor */
+.columna-25 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+/* Ajustar el ancho de una columna al 33.33% del contenedor */
+.columna-33 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+}
+
+/* Ajustar el ancho de una columna al 66.66% del contenedor */
+.columna-66 {
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+}
+
+/* Ajustar el ancho de una columna al 50.00% del contenedor */
+.columna-50 {
+    flex-basis: 50.00%;
+    max-width: 50.00%;
+}
+
+/* Clases generales para crear una barra de menu */
+.menu-barra {
+    list-style-type: none; /* quita la viñeta */
+    margin: 0px; /* Elimina el margin predeterminado */
+    padding: 0px; /* Elimina el padding predeterminado */
+    display: flex; /* activa flebox para que los items esten uno al costado de otro */
+}
+
+.menu-barra a {
+    display: block; /* Trata a cada elemento como si fuese una caja */
+    text-decoration: none; /* Para quitar el subrayado de los enlaces */
+}
+
+.enlace-boton {
+    background-color: var(--color7);
+    color: var(--color-blanco);
+    padding: 10px 20px; /* 10px para top/bottom, 20px para left/right */
+    width: fit-content; /* se ajusta al contenido */
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.7s ease-in-out; /* transición cuando se cambia el color, a que contenidos cambian/tiempo/inicio,final, los dos, etc */
+}
+
+/* cambia el color al pasar el mouse */
+.enlace-boton:hover {
+    background-color: var(--color8);
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+}

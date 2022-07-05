@@ -1,0 +1,56 @@
+#proximamente {
+    background-image: url(../images/proximamente1.jpg);
+    background-size: cover; /* presenta el mayor contenido de la imagen */
+    background-position: center; /* centra la imagen del área */
+    /* Fija la imagen en el contenedor con respecto al scroll
+    del navegador */
+    background-attachment: fixed;
+    max-height: 720px; /* alto máximo del área */
+    height: 720px; /* alto del área */
+}
+
+#proximamente-letra { 
+    margin: 30px 0px; /* margen general */
+}
+
+#proximamente-trailer {
+    display: flex;
+    flex-direction: column;
+}
+
+#proximamente .contenedor {
+    position: relative;
+}
+
+#proximamente .contenedor a {
+    color: var(--color8); /* color del a */
+    text-decoration: none; /* quita el subrayado */
+    transition: all 0.6s ease-in-out; /* transicion */
+}
+
+#proximamente .contenedor a:hover {
+    color: var(--color-blanco); /* color del a al pasar el puntero */
+}
+
+#proximamente-futuro {
+    position: absolute;
+    top: 90px; /* posicion arriba */
+    right: 20px; /* posicion derecha */
+}
+
+#proximamente-futuro .futuro {
+    background-color: rgba(80, 6, 140, 0.4);
+    padding: 15px; /* separacion */
+    margin-bottom: 35px; /* margen abajo */
+    transition: all 0.6s ease-in-out; /* transicion */
+}
+
+#proximamente-futuro .futuro:hover {
+    background-color: rgba(80, 6, 140, 0.9); /* color de fondo */
+}
+
+#proximamente-futuro h3 {
+    text-align: center;
+    margin-top: -11px;
+    padding-bottom: 8px;
+}
