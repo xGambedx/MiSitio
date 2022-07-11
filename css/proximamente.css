@@ -1,0 +1,82 @@
+/* https://color.adobe.com/es/violeta%20oscuro%206-color-theme-9242315 */
+:root {
+    /* Declaración de variables para colores */
+    --color1:#24023F;
+    --color2:#7308CB;
+    --color3:#48057F;
+    --color4:#4F068C;
+    --color5:#390465;
+    --color6:#080325;
+    --color7: #d92b4c;
+    --color8: #fd4d6d;
+    --color-negro:#000000;
+    --color-blanco:#ffffff;
+    --gris-claro:#999999;
+    --gris-oscuro:#454545;
+}
+
+#proximamente-cabecera {
+    background-color: var(--color5);
+}
+
+#proximamente-cabecera h1 {
+    font-size: 25px; /* tamaño del h1 */
+    font-weight: 400; /* grosor de la fuente */
+}
+
+#proximamente {
+    background-image: url(../images/proximamente1.jpg);
+    background-size: cover; /* presenta el mayor contenido de la imagen */
+    background-position: center; /* centra la imagen del área */
+    /* Fija la imagen en el contenedor con respecto al scroll
+    del navegador */
+    background-attachment: fixed;
+    max-height: 720px; /* alto máximo del área */
+    height: 720px; /* alto del área */
+}
+
+#proximamente-letra { 
+    margin: 40px 0px; /* margen general */
+}
+
+#proximamente-trailer {
+    display: flex;
+    flex-direction: column;
+}
+
+#proximamente .contenedor {
+    position: relative;
+}
+
+#proximamente .contenedor a {
+    color: var(--color8); /* color del a */
+    text-decoration: none; /* quita el subrayado */
+    transition: all 0.6s ease-in-out; /* transicion */
+}
+
+#proximamente .contenedor a:hover {
+    color: var(--color-blanco); /* color del a al pasar el puntero */
+}
+
+#proximamente-futuro {
+    position: absolute;
+    top: 25px; /* posicion arriba */
+    right: 5px; /* posicion derecha */
+}
+
+#proximamente-futuro .futuro {
+    background-color: rgba(80, 6, 140, 0.4);
+    padding: 15px; /* separacion */
+    margin-bottom: 35px; /* margen abajo */
+    transition: all 0.6s ease-in-out; /* transicion */
+}
+
+#proximamente-futuro .futuro:hover {
+    background-color: rgba(80, 6, 140, 0.9); /* color de fondo */
+}
+
+#proximamente-futuro h3 {
+    text-align: center;
+    margin-top: -11px;
+    padding-bottom: 8px;
+}
