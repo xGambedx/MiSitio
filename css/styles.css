@@ -919,7 +919,7 @@ address {
 } /* Fin de Responsive Web para Celular (650px) */
 
 /* Celular (350px) */
-@media screen and (max-width:350px) {
+@media screen and (max-width:450px) {
     #cabecera {
         position: unset;
     }
