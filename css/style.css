@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import "bootstrap.css";
+
+* {
+    font-family: 'Open Sans' -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif
+}
+
+:root {
+    --color1: #F9F6F0;
+    --color2: #D69A24;
+    --color3: #306658;
+    --color4: #633615;
+    --color5: #999CA5;
+    --color-gris-claro: #CCCCCC;
+    --color-gris-oscuro: #444444;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #1D1D1D;
+    text-align: center;
+}
+
+h2 {
+    color: rgba(200, 169, 106, 0.14);
+    font-size: 190px;
+    font-family: 'Forum', cursive;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    font-size: 24px;
+    font-family: 'Forum', cursive;
+    text-align: center;
+}
+
+h6 {
+    font-family: 'Forum', cursive;
+    color: #1d1d1d;
+    font-size: 52px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+figure {
+    margin: 0px 0px 2rem;
+}
+
+#main-footer img, svg {
+    vertical-align: middle;
+    margin-top: -25px;
+}
+
+#main-footer {
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-gris-claro);
+    padding: 0px 0;
+}
+
+#footer {
+    position: relative;
+    padding: 78px 0 40px 0;
+    overflow: hidden;
+}
+
+#footer .widget .widget-title {
+    color: var(--color1);
+}
+
+#scroll-top {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 3;
+    text-align: center;
+    transform: translateY(-33px);
+    width: 100px;
+    height: 100px;
+}
+
+#scroll-top img {
+    width: 80px;
+    height: 96px;
+}
+
+#scroll-top:hover img {
+    transform: scale(0.9);
+}
+
+#scroll-top, #scroll-top img, #scroll-top {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#reseña h3 {
+    text-align: center;
+}
+
+#critica figure {
+    text-align: center;
+}
+
+#icom .material-symbols-outlined {
+    font-size: 50px;
+    margin-bottom: 34px;
+    margin-top: 20px;
+    color: #c8a96a;
+    transition: color, width 4s;
+}
+
+#categorias .col {
+    text-align: center;
+    display: grid;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-top: 41px;
+    padding-bottom: 79px;
+    padding-right: 0px;
+    font-size: 50px;
+    padding-left: 0px;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+}
+
+#categorias .col:hover {
+    background-color: #c8a96a;
+    color: var(--color-blanco);
+}
+
+#menu .container-fluid a .img-fluid:hover:first-child {
+    transition: all 0.3s ease;
+    transform: translateY(-4px);
+}
+
+#menu-iconos {
+    display: inline;
+}
+
+#reseña p {
+    text-align: center;
+}
+
+#elementos img {
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#elementos .container .col:nth-child(2){
+    width: 100px;
+}
+
+/* Scroll Top
+-------------------------------------------------------------- */
+.wrap-scroll {
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+    margin-top: 62px;
+    width: 100%;
+    position: relative;
+    z-index: 15;
+}
+
+.tit {
+    color: rgba(200, 169, 106, 0.1);
+    font-size: 250px;
+    font-family: 'Forum', cursive;
+}
+
+.tit1 {
+    margin-top: -175px;
+    padding-bottom: 126px;
+}
+
+.heading .tit1 {
+    margin-top: -175px;
+}
+
+.col-xl-3 {
+    width: 100%;
+}
+
+.col-xl-12 {
+    display: flex;
+}
+
+.col-md-7col-sm-6 h2 {
+    font-size: 100px;
+}
+
+.col .material-symbols-outlined {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.col .material-symbols-outlined:hover {
+    transform: rotate(360deg);
+}
+
+.img-fluid {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.img-fluid:hover {
+    transition: all 0.3s ease;
+    transform: translateY(-12px);
+}
+
+.btn-warning {
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+}
+
+.material-symbols-outlined {
+    margin-top: 5px;
+}
+
+.reseñas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.reseñas_header {
+
+    margin: 50px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reseñas_header h1 {
+
+    font-size: 2.9 rem;
+    font-weight: 500;
+    background-color: #202020;
+    color: white;
+    padding: 10px 20px;
+
+}
+
+.reseñas_header h2 {
+    font-size: 2.2 rem;
+    color: #252525;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.reseña_contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--color1);
+}
+
+.reseña_caja {
+
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.perfil-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.perfil-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+
+}
+
+.name-user {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.name-user strong {
+    color: #3d3d3d;
+    font-size: 1.3rem;
+
+}
+
+.name-user span {
+
+    color: #979797;
+    font-size: 1.1rem;
+
+}
+
+.estrellas {
+    color: #f9d71d;
+
+}
+
+.caja-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.comentarios-clientes p {
+    color: #4b4b4b;
+}
+
+/* Footer-------------------------------- */
+.logo-footer {
+    text-align: center;
+    margin-bottom: 75px;
+    margin-top: 2px;
+}
+
+.padded {
+    background-color: var(--color1);
+    padding-top: 100px;
+    padding-bottom: 92px;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+}
+
+.container {
+    max-width: 1600px;
+}
+
+.container-fluid .col-6 {
+    color: red;
+}
