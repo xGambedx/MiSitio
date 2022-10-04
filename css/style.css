@@ -125,23 +125,39 @@ figure {
     transition: color, width 4s;
 }
 
-#categorias .col {
+#categorias .row {
+    justify-content: center;
+}
+
+#categorias .col-xl-3 {
     text-align: center;
+    width: 280px;
     display: grid;
-    margin-right: 25px;
-    margin-left: 25px;
-    padding-top: 41px;
-    padding-bottom: 79px;
-    padding-right: 0px;
     font-size: 50px;
-    padding-left: 0px;
+    margin: 0px 25px 40px;
+    padding: 40px 0px 80px;
     background-color: var(--color-blanco);
     color: var(--color-negro);
 }
 
-#categorias .col:hover {
+#categorias .col-xl-3:hover {
     background-color: #c8a96a;
     color: var(--color-blanco);
+}
+
+#categorias .col-xl-3 .material-symbols-outlined {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+#categorias .col-xl-3 .material-symbols-outlined:hover {
+    transform: rotate(360deg);
+}
+
+#instrumentos .row {
+    justify-content: center;
 }
 
 #menu .container-fluid a .img-fluid:hover:first-child {
@@ -197,27 +213,12 @@ figure {
     margin-top: -175px;
 }
 
-.col-xl-3 {
-    width: 100%;
-}
-
 .col-xl-12 {
     display: flex;
 }
 
 .col-md-7col-sm-6 h2 {
     font-size: 100px;
-}
-
-.col .material-symbols-outlined {
-    font-size: 50px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    transition: all 0.3s ease;
-}
-
-.col .material-symbols-outlined:hover {
-    transform: rotate(360deg);
 }
 
 .img-fluid {
