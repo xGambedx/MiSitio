@@ -27,10 +27,11 @@ h1 {
 
 h2 {
     color: rgba(200, 169, 106, 0.14);
-    font-size: 190px;
     font-family: 'Forum', cursive;
     padding-bottom: 40px;
     text-align: center;
+    cursor: pointer;
+    font-size: 14vw;
 }
 
 h3 {
@@ -46,7 +47,7 @@ h4 {
 h6 {
     font-family: 'Forum', cursive;
     color: #1d1d1d;
-    font-size: 52px;
+    font-size: 4vw;
     text-align: center;
 }
 
@@ -66,8 +67,12 @@ figure {
 
 #main-footer {
     background-color: var(--color-gris-oscuro);
-    color: var(--color-gris-claro);
+    color: var(--color-blanco);
     padding: 0px 0;
+}
+
+#main-footer .container-fluid {
+    padding-top: 70px;
 }
 
 #footer {
@@ -83,18 +88,14 @@ figure {
 #scroll-top {
     display: block;
     position: absolute;
-    cursor: pointer;
-    border-radius: 50%;
     z-index: 3;
     text-align: center;
-    transform: translateY(-33px);
-    width: 100px;
-    height: 100px;
+    transform: translateY(-30px);
 }
 
 #scroll-top img {
     width: 80px;
-    height: 96px;
+    height: auto;
 }
 
 #scroll-top:hover img {
@@ -173,7 +174,7 @@ figure {
     text-align: center;
 }
 
-#elementos img {
+#categorias img {
     transition: all 0.3s ease;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -182,8 +183,8 @@ figure {
     -o-border-radius: 50%;
 }
 
-#elementos .container .col:nth-child(2){
-    width: 100px;
+#categorias .row:last-child {
+    margin-top: 50px;
 }
 
 /* Scroll Top
@@ -198,19 +199,9 @@ figure {
     z-index: 15;
 }
 
-.tit {
-    color: rgba(200, 169, 106, 0.1);
-    font-size: 250px;
-    font-family: 'Forum', cursive;
-}
-
 .tit1 {
     margin-top: -175px;
     padding-bottom: 126px;
-}
-
-.heading .tit1 {
-    margin-top: -175px;
 }
 
 .col-xl-12 {
@@ -235,6 +226,17 @@ figure {
     border-radius: 50%;
     width: 50px;
     height: auto;
+}
+
+.btn-outline-success {
+    color: var(--color2);
+    border-color: var(--color2);
+}
+
+.btn-outline-success:hover {
+    color: var(--color-blanco);
+    border-color: var(--color2);
+    background-color: var(--color2);
 }
 
 .material-symbols-outlined {
@@ -360,7 +362,7 @@ figure {
 .padded {
     background-color: var(--color1);
     padding-top: 100px;
-    padding-bottom: 92px;
+    padding-bottom: 40px;
 }
 
 .carousel-indicators [data-bs-target] {
