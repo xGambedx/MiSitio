@@ -28,10 +28,9 @@ h1 {
 h2 {
     color: rgba(200, 169, 106, 0.14);
     font-family: 'Forum', cursive;
-    padding-bottom: 40px;
     text-align: center;
     cursor: pointer;
-    font-size: 14vw;
+    font-size: 13vw;
 }
 
 h3 {
@@ -47,7 +46,7 @@ h4 {
 h6 {
     font-family: 'Forum', cursive;
     color: #1d1d1d;
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: center;
 }
 
@@ -200,12 +199,16 @@ figure {
 }
 
 .tit1 {
-    margin-top: -175px;
-    padding-bottom: 126px;
+    margin-top: -115px;
+    padding-bottom: 80px;
 }
 
 .col-xl-12 {
     display: flex;
+}
+
+.row {
+    justify-content: center;
 }
 
 .col-md-7col-sm-6 h2 {
@@ -372,7 +375,7 @@ figure {
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1400px;
 }
 
 .container-fluid .col-6 {
