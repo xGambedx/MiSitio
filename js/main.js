@@ -39,5 +39,37 @@ $(function(){
                 $("#main-content").html(data);
             });
     })
+
+    $("#menu-item-eventos").click(function(){
+        fetch("herramientas/eventos.html")
+        .then(response => response.text())
+        .then(data => {
+            //console.log(data)
+            $("#main-content").html(data);
+        });
+    })
+
+    // LEER SERVICIO WEB
+    fetch("https://musicmoda.000webhostapp.com/canciones.php")
+    .then(response => response.json())
+    .then(data => {
+        llenarTablaEnvios(data);
+    });
+
+    //Poner los datos del sevicio web leido en html y mostrarlo
+    function llenarTablaEnvios(data) {
+        let contenidoTabla = "";
+        data.map(item => {
+            let fila = "<tr>";
+            fila += "<td>" + item.idcancion + "</td>";
+            fila += "<td>" + item.titulo + "</td>";
+            fila += "<td>" + item.album+ "</td>";
+            fila += "<td>" + item.genero+ "</td>";
+            fila += "<td>" + item.artista+ "</td>";
+            fila += "</tr>";
+            contenidoTabla += fila;
+        });
+        $("#tbody-cancion").html(contenidoTabla);
+    }
     
 })

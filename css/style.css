@@ -186,6 +186,10 @@ figure {
     margin-top: 50px;
 }
 
+#canciones h2 {
+    font-size: 8vw;
+}
+
 /* Scroll Top
 -------------------------------------------------------------- */
 .wrap-scroll {
@@ -376,6 +380,8 @@ figure {
 
 .container {
     max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container-fluid .col-6 {
